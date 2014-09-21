@@ -5,23 +5,9 @@ public class Examen2 {
 				//2.5pts
 				int DevuelveValor(int arreglo[],int i)
 				{
-					
-				 int mi_arreglo[];
-						mi_arreglo= new int[3];
-						mi_arreglo[0]=10; 
-						mi_arreglo[1]=20;
-						mi_arreglo[2]=30;
-						
-						int i = 0;
-						while (1<mi_arreglo.length); 
-						{
-							System.out.print(mi_arreglo[1] );
-							i=i+1;
-						}
-
-						return -1;
-					
-				}
+	                        	return arreglo[i];
+                          	}
+	
 
 				//Si el promedio de todos los valores de "notas" es mayor a 60, devuelve verdadero de lo contrario falso
 				//2.5pts
