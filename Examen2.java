@@ -27,27 +27,23 @@ public class Examen2 {
 				//2.5pts
 				static boolean alumnoAprobo(int notas[])
 				{
-					{
-					{ Scanner s = new Scanner (System.in); 
-					   double notas [] []= new double [3][4];
-					   for (int alumno=0; alumno<4;alumno++)
-					   {
-						   System.out.print("alumno"+(alumno+1));
-						   for(int notas =0; notas<4; notas++)
-						   {
-							   System.out.print("ingrese la nota" + (notas+1)+": ");
-							   notas [notas] [alumno]=s.nextInt();   
-						   }
-					   }
-					
-				      System.out.println("Las notas del alumno 2: ");  
-				      for (int notas = 2; notas <4; notas++)
-				      
-				    	  System.out.println(notas[notas][0]); 
-						return false;
-					}
-				}
-				}
+	                        	int suma = 0;
+	                         	int promedio = 0;
+		
+	                            	for(int a = 0; a < notas.length; a++)
+	                      	{
+		                      	suma = suma + notas[a];
+	                        	}
+	  	
+		                        promedio = suma / 3;
+		
+		                        if(promedio >= 60)
+	                         	{
+		                    	return true;
+	                        	}
+	                         	return false;
+                          	} 
+	
 					
 				
 				
@@ -56,27 +52,10 @@ public class Examen2 {
 				//2.5pts
 				static int obtenerValorBidi(int mi_arreglo[][], int x, int y)
 				{
-				 int miarreglo[];
-					miarreglo= new int[1];
-					miarreglo= new int[2];
-					miarreglo[0]=10;
-					miarreglo[1]=20;
-					
-					int x = 0; 
-					while (1<miarreglo.length); 
-					{
-						System.out.print(miarreglo[1] );
-						x=i+1;
-					}
-					
-					int z = 0;
-					while (1<miarreglo.length);
-					{
-						System.out.print(miarreglo[1]);
-						z= i+1;
-				}
-					return -1;
-				}
+		                 return 
+			              	mi_arreglo[x][y];
+                       	}
+			
 				
 				
 				//Devuelve la cantidad de veces que "valor" existe en "arreglo"
